@@ -1,0 +1,16 @@
+{
+  "name": "composer-updater",
+  "version": "0.0.1",
+  "module": "app.ts",
+  "devDependencies": {
+    "@types/bun": "^1.0.4",
+    "bun-types": "^1.0.25"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "type": "module",
+  "scripts": {
+    "build": "bun build ./app.ts --minify --target bun --compile --outfile ./dist/composer-updater"
+  }
+}
